@@ -1,2 +1,2 @@
 # Superhéroes 
-##Tarea para FrontEnd - Certified Tech Developer - Digital House
+Tarea para FrontEnd - Certified Tech Developer - Digital House

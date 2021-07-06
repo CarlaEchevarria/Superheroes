@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Tienda de Héroes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="banner-descuentos">
+        <p class="p-banner-descuentos">20% de descuento en todos los productos!</p>
+    </div>
+    <div class="titulo">
+        <div class="containertitulo1">
+        <a  class="containertitulo2"href="index.html"><img src="img/logoTienda.svg" alt="logo tienda">
+        <h1> Tienda de Héroes</h1></a></div>
+    </div>
+    <header>
+        <nav>
+            <div class="navcontainer">
+                <a class="navclass" href="index.html"> Inicio</a>
+                <a class="navclass" href="contacto.html"> Contacto</a>
+                <a class="navclass" href="registro.html"> Registrarme</a>
+                <a class="navclass" href="login.html"> Ingresar</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="maincontainer">
+            <h2 class="titulogrande">Registro</h2>
+            <form action="/registro" method="POST">
+                <div class="contenedor">
+
+                    <div class="nombres">
+                        <label for="nombre"> Nombre y Apellido</label>
+                        <label for="correo"> Correo Electrónico</label>
+                        <label for="contrasena"> Contraseña </label>
+                        <label for="pais"> País</label>
+                    </div>
+                    <div class="campos">
+                        <input id="nombre" type="text" placeholder="Nombre y Apellido">
+                        <input id="correo" type="email" placeholder="Correo Electrónico">
+                        <input id="contrasena" type="password" placeholder="Contraseña">
+                        <select placeholder="País" id="pais">
+                            <option value="" disabled selected>País</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Colombia">Colombia</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="contenedorbotones">
+                    <button class="negado" type="reset">Resetear</button>
+                    <button type="submit">Registrarse</button>
+                </div>
+            </form>
+        </section>
+        <p class="invitacion">¿Ya tenés una cuenta? <a class="registrarme"href="#">Ingresá</a></p>
+        <p class="aviso">Sitio aún no optimizado para responsive</p>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+
+
+
+</body>
+
+</html>

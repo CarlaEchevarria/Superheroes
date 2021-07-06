@@ -32,18 +32,18 @@ p{
     background-color: #1CD1B0;
     height: 38px;
     padding: 10px;
+    font-size: 15px;
 }
 
-    p.banner-descuentos{
-        font-size: 15px;
-    }
+.p-banner-descuentos{
+    width: 80%;
+    margin: 0 auto;
+}
 
 .titulo{
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
+
     position: sticky;
-    top: 0;
+    top: 0px;
     background-color: #00669F;
     height: 101px;
     padding: 28px 28px 26px 28px;
@@ -51,87 +51,59 @@ p{
     z-index: 9999;
 }
 
-
-/* MAIN ------------------------------------------------------- */
-
-.card-padre-main{
-    margin:0 auto;
-    width: 100%;
-    padding: 150px 15px 150px;
-}
-
-.cards{
-    display: inline-block;
-    position: relative;
-    width: 28%;
-    margin: 0px 30px;
-}
-
-.maincontainer{
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-    width: 50%;
-
+.containertitulo1{
+    width: 80%;
+    height: 100%;
     margin: 0 auto;
-    height: 800px;
+
+}
+.containertitulo2{
+
+    display:inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+
+
+}
+nav{
+    background-color: #001D2D;
+    height: 40px;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    }
+
+.navcontainer{
+    display: flex;
+    max-width: 90%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navclass{
+    color: white;
+    padding: 15px;
+}
+/* MAIN ------------------------------------------------------- */
+body{
+    position: relative;
+}
+.todascards-padre{
+    margin:80px auto 40px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 
-.titulogrande{
-    font-family: Inter;
-    font-weight: 700;
-    font-size: 72px;
-    color: #333333;
+.containercardindividual{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 40px 20px;
+
+
 }
-
-label, .Karla{
-    font-family: Karla;
-    font-size: 20px;
-}
-
-label{
-    display: block;
-}
-
-.Karla{
-    text-align: center;
-    color: #00669F;
-}
-
-.registrarme{
-    color: black;
-}
-
-.campo{
-    width:100%;
-}
-
-input{
-    min-width:100%;
-    height: 2rem;
-    padding: 20px;
-    margin: 0px 0px 15px;
-}
- 
-
-
-.ingresar {
-    background-color: #1CD1B0;
-    border: none;
-    border-radius: 30px;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;   
-    font-family: Karla;
-    font-size: 20px;
-    font-weight: 700;
-    margin: 20px 2px 4px;
-    cursor: pointer;
-    width:100%;
-}
-
-
 
 /* -------------- IMAGEN ------------------- */
 
@@ -148,14 +120,15 @@ input{
 
                 .escenarios{
                     width: 100%;
+                    height:300px;
                     border-radius: 30px 30px 0px 0px;
                 }
 
                 .avatars{
                     border-radius: 50%;
-                    width: 120px;
+                    width: 180px;
                     position: absolute;
-                    right: calc(50% - 59px) ;
+                    right: calc(50% - 90px) ;
                     bottom: -60px;
                     box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
                     z-index: 999;
@@ -163,14 +136,19 @@ input{
 /* -------------- TEXTO ------------------- */
 
         .card-hijo-texto{
-            position: relative;
             background: #F3F3F3;
-            padding: 74px 10px 94px;
+            padding: 74px 40px 0px;
             box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
         }
 
                 .titulo-item{
                     font-size: 30px;
+                    font-weight: 800;
                     text-align: center;
                     margin-bottom: 10px;
                     color: black;
@@ -179,14 +157,23 @@ input{
 
                 .descripcion-item{
                     font-size: 16px;
-                    margin: 10px;
+;
                     color: #333333;
                     margin-bottom: 34px;
                 }
+/* -------------- BOTON ------------------- */
+
+.card-hijo-boton{
+    display: flex;
+    justify-content: space-around;
+    background: #F3F3F3;
+    padding: 20px 0px;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    max-width: 100%;
+}
+
 
                 .boton-ver-mas{
-                    position: absolute;
-                    right: calc(50% - 64px);
                     width: 128px;
                     padding: 15px;
                     text-align: center;
@@ -197,9 +184,152 @@ input{
                     margin-bottom: 30px;
                 }
 
+.flotante{
+    position: fixed;
+    right: 40px;
+    top:50%
+}
+
+.aviso{
+    position: fixed;
+    top: 200px;
+    right: 20px;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    padding: 20px 20px;
+    background-color: goldenrod;
+}
+
+
+/* -------------- FORMULARIOS ------------------- */
+
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+
+
+
+                .titulogrande{
+                    font-family: Inter;
+                    font-weight: 700;
+                    font-size: 72px;
+                    color: #333333;
+                    margin: 35px 0px;
+                }
+                
+                
+                label{
+                    display: block;
+                    font-family: Karla;
+                    font-size: 20px;
+                    margin-bottom:20px;
+                }
+                
+                .invitacion{
+                    text-align: center;
+                    color: #333333;
+                    font-family: Karla;
+                    font-size: 20px;
+                    margin: 40px 0px;
+                }
+                
+                .registrarme{
+                    color: #00669F;
+                    font-size: 20px;
+                    font-family: Karla;
+                
+                }
+                
+                .campo{
+                    width:100%;
+                }
+                
+                input, select{
+                    min-width:100%;
+                    height: 2rem;
+                    padding: 20px;
+                    margin-bottom:20px;
+                    border: black 1px solid;
+                    color: black;
+                    font-size: 20px;
+                    font-family: Karla;
+                }
+                
+                .contenedor{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    height: 80%;
+                }
+                
+                .nombres{
+                    width: 40%;
+                    padding: 10px 10px 10px 0px;
+                    display: flex;
+                    align-items: flex-end;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    
+                }
+                
+                .campos{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width:90%;
+                }
+                .contenedorbotones{
+                    display:flex;
+                    justify-content:space-between;
+                }
+                
+                button {
+                    background-color: #1CD1B0;
+                    border: none;
+                    border-radius: 30px;
+                    color: black;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;   
+                    font-family: Karla;
+                    font-size: 20px;
+                    font-weight: 700;
+
+                    cursor: pointer;
+                    width:47%;
+                }
+                
+                
+                button.stretch {
+                    width:100%;
+                }
+                
+                button.negado {
+                    background-color: #888888;
+                }
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
 /* FOOTER ------------------------------------------------------- */
 footer{
-    position: absolute;
+    
+    position: realtive;
     bottom: 0px;
     padding: 16px ;
     height: 51px;
@@ -207,4 +337,12 @@ footer{
     background-color: #00669F;
     color: white;
     font-size: 16px;
+}
+
+.footercontainer{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
 }
